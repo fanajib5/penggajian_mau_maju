@@ -32,6 +32,14 @@ npm install && npm run dev
 
 > Penting! Biarkan terminal `npm` terbuka
 
+Buat database baru dengan nama
+
+```bash
+...
+DB_DATABASE=penggajian_mau_maju
+...
+```
+
 Migrasi *database*
 
 ```bash
@@ -65,6 +73,28 @@ Dan navigasikan ke *link* server: <http://127.0.0.1:8000>
 * **User Supervisor Payroll:**
   * email: `spv@maumaju.com`
   * pass: `Password`
+
+User di atas adalah berdasarkan role `user`, `staff-payroll`, dan `supervisor-payroll`
+
+List URL yang tersedia (jika port default `8000`):
+
+```bash
+# web
+http://localhost:8000/
+http://localhost:8000/login
+http://localhost:8000/pegawai
+http://localhost:8000/pegawai/{id}/edit
+http://localhost:8000/penggajian
+http://localhost:8000/penggajian/create
+http://localhost:8000/penggajian/{id}
+http://localhost:8000/generate-pdf/penggajian/{id}
+http://localhost:8000/generate-pdf/penggajian/{id}/cetak
+http://localhost:8000/logout
+
+# api
+http://localhost:8000/api/presensi
+http://localhost:8000/api/presensi/{id}?periode=2021-01
+```
 
 ## Stak Teknologi
 

@@ -86,17 +86,17 @@ List URL yang tersedia (jika port default `8000`):
 http://localhost:8000/
 http://localhost:8000/login
 http://localhost:8000/pegawai
-http://localhost:8000/pegawai/{id}/edit
+http://localhost:8000/pegawai/{pegawai_id}/edit
 http://localhost:8000/penggajian
 http://localhost:8000/penggajian/create
-http://localhost:8000/penggajian/{id}
-http://localhost:8000/generate-pdf/penggajian/{id}
-http://localhost:8000/generate-pdf/penggajian/{id}/cetak
+http://localhost:8000/penggajian/{penggajian_id}
+http://localhost:8000/generate-pdf/penggajian/{penggajian_id}
+http://localhost:8000/generate-pdf/penggajian/{penggajian_id}/cetak
 http://localhost:8000/logout
 
 # api
-http://localhost:8000/api/presensi
-http://localhost:8000/api/presensi/{id}?periode=2021-01
+GET http://localhost:8000/api/presensi
+GET http://localhost:8000/api/presensi/{pegawai_id}?periode=2021-01
 ```
 
 ## Stak Teknologi

@@ -18,8 +18,14 @@ Setelah selesai, masuk ke direktori proyek. Bisa dengan membuka langsung atau pe
 cd penggajian_mau_maju
 ```
 
+Jalankan perintah berikut
+
 ```bash
 composer install
+```
+
+```bash
+cp .env.example .env
 ```
 
 ```bash
@@ -40,7 +46,7 @@ DB_DATABASE=penggajian_mau_maju
 ...
 ```
 
-Migrasi *database*
+Skema database ada dalam migrasi file Laravel. Sehingga, jalankan migrasi *database* dengan perintah
 
 ```bash
 php artisan migrate
@@ -64,9 +70,6 @@ Dan navigasikan ke *link* server: <http://127.0.0.1:8000>
 
 *Login* dengan pilihan akun berikut:
 
-* **User Biasa:**
-  * email: `user@maumaju.com`
-  * pass: `Password`
 * **User Staff Payroll:**
   * email: `staff@maumaju.com`
   * pass: `Password`

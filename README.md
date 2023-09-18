@@ -7,7 +7,7 @@
 Clone dengan perintah
 
 ```bash
-https://github.com/fanajib5/penggajian_mau_maju
+gir clone https://github.com/fanajib5/penggajian_mau_maju
 ```
 
 Atau download proyek ini secara langsung.
